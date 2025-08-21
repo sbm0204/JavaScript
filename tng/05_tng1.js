@@ -9,18 +9,6 @@
 //   console.log('*****')
 // }
 
-// let startDan = 2;
-// let startMultiPlier = 1;
-// let maxDan = 19;
-
-// for(let dan = startDan; dan <= maxDan; dan++) {
-//   console.log(`** ${dan}단 **`);
-
-//    for(let multiPlier = startMultiPlier; multiPlier <= maxDan; multiPlier++) {
-//     console.log(`${dan} X ${multiPlier} = ${dan * multiPlier}`);
-//   }
-// }
-
 // let star = '*';
 // let makedStar = '';
 // makedStar += star;
