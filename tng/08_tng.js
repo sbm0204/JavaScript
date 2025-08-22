@@ -41,25 +41,38 @@ const result = [
   },
 ];
 
-// result.rank.val
+const resultMap = result.map(item => {
+  let krRank = ''; // 왜? 관리자, 팀장, 주임, 사원을 넣고 싶어서 변수 처리함.
+  if(item.rank === 1) {
+    krRank = '관리자';
+  } else if(item.rank === 2) {
+    krRank = '팀장';
+  } else if(item.rank === 3) {
+    krRank = '주임';
+  } else {
+    krRank = '사원';
+  }
 
-// const ranks = result.map(({ rank }) => rank);
+  item.rank = krRank;
+  return item;
+});
+
 
 // result[0].rank = 'N/A';
 // result[1].rank = '관리자';
 // result[2].rank = '팀장';
 // result[3].rank = '주임';
 
-const resultMapForRank = result.map(rank => {
-  if(rank === 1) {
-    return '관리자';
-  } else if(rank === 2) {
-    return '팀장';
-  } else if(rank === 3) {
-    return '주임';
-  } else {
-    return '사원';
-  }
-});
+// const resultMapForRank = result.map(user => {
+//   if(user.rank === 1) {
+//     return '관리자';
+//   } else if(user.rank === 2) {
+//     return '팀장';
+//   } else if(user.rank === 3) {
+//     return '주임';
+//   } else {
+//     return '사원';
+//   }
+// });
 
-console.log(resultMapForRank);
+// console.log(resultMapForRank);
