@@ -71,7 +71,7 @@ console.log(arr4.includes('홍길동')); // true 반환
 console.log(arr4.includes('김지인')); // false 반환
 
 // push(...args) 의 의미는 arguments들이 몇 개 혹은 몇백 개 이상이 되어도 받아주겠다는 것. 
-// 그리고 원본 배열에 1. 마지막 요소를 추가하고, 2. 바뀐 length 반환 (swallow copyp)
+// 그리고 원본 배열에 1. 마지막 요소를 추가하고, 2. 바뀐 length 반환 (swallow copy)
 const resultLength = arr4.push(100);
 console.log(resultLength, arr4);
 
@@ -184,7 +184,7 @@ const arr18 = [1, 2, 3, 4, 5];
 const resultFilter = arr18.filter(val => val % 2 === 0);
 console.log(resultFilter);
 
-// 10) forEach(callback) : 배열의 모든 요소에 대해 콜백함수를 반복 실행.
+// 10) forEach(callback) : 배열의 모든 요소에 대해 콜백함수를 반복 실행. 결과값X
 const arr19 = [1, 2, 3, 4, 5];
 arr19.forEach((val, key) => console.log(`${key} : ${val}`));
 // **val**은 배열의 **값(value)**을 의미합니다.
