@@ -199,3 +199,14 @@ const num2 = arr20[1];
 
 const [num3, num4] = arr20;
 console.log(num3, num4);
+
+// const printName = above26yrs.map(users => users.name);
+// console.log(printName);
+
+// const printName2 = above26yrs.map(({ name, age}) => age);
+// console.log(printName2);
+
+// const {name} = { name: '홍길동', age: 20};
+// console.log(name);
+
+// 위의 3개 다 같은 코드이다. 
