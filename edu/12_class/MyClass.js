@@ -23,9 +23,9 @@ class MyClass {
 
   // 인스턴스 메소드
 
-  getAge() {
-    return this.#add;
-  }
+  getAgeSum(a, b) {
+  return this.#add(a, b);
+}
 
   #add(a, b) {
     return a + b;
