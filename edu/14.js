@@ -17,10 +17,10 @@ btn3.addEventListener('click', () => {
   alert('232323');
 });
 
-btn3.addEventListener('click', btn3Altert);
-  function btn3Altert() {
-  alert('33333')
-}
+// btn3.addEventListener('click', btn3Altert);
+//   function btn3Altert() {
+//   alert('33333')
+// }
 
 window.addEventListener('scroll', ()=> {
   console.log('scroll test');
