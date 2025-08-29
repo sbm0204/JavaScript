@@ -1,0 +1,9 @@
+.timeBox {
+  display: flex;
+  gap: 5px;
+  justify-content: left;
+}
+
+#stopBtn #redoBtn {
+  font-weight: bold;
+}
