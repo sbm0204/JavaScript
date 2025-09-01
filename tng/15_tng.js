@@ -143,7 +143,7 @@ function generateNowTimeFormatUntilMillisec() {
   nowHours.toString().padStart(2, '0');
 
   return `${(ampm)}`
-  +  `${(nowHours.toString().padStart(2, '0'))}`
+  + `${(nowHours.toString().padStart(2, '0'))}`
   + `:${nowMinutes.toString().padStart(2, '0')}`
   + `:${(nowSeconds.toString().padStart(2, '0'))}`
   + `:${(nowMilliseconds.toString().padStart(2, '0'))}`;
