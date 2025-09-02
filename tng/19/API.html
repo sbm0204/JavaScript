@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API</title>
+  <link rel="stylesheet" href="./API.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./API.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="containerForButtonAndText">
+      <input type="text" id="urlForAPI" placeholder="Please type the url">
+      <button type="button" id="btnForAPI">API 호출</button>
+    </div>
+    <div id="loadingMessage"></div>
+    <div class="containerForImages" id="containerForImages">
+    </div>
+  </div>
+</body>
+</html>

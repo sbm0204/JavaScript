@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 10px;
+}
+
+#apiUrl {
+  width: 300px;
+}
+
+.card-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.card { /* div로 잡고 img로 안잡는 이유가 부모영역에 issue가 생기기때문에 div로 잡는다.  */
+  padding-top: 70%;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.loading-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading > p {
+  background-color: white;
+  width: 100px;
+  text-align: center;
+}
